@@ -15,5 +15,8 @@ public class SomeTest {
         for (int i = 0; i < 7; i++) {
             game.add("player" + i);
         }
+        assertTrue(game.isPlayable());
 	}
+
+
 }
