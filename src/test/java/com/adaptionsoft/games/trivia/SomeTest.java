@@ -44,14 +44,13 @@ public class SomeTest {
         boolean notAWinner=true;
         Game aGame = new Game();
 
-        boolean[] answers = new boolean[]{true, false};
 
         aGame.add("Chet");
         aGame.add("Pat");
 
         assertTrue(aGame.isPlayable());
 
-        for(int i=0;i<12;i++) {
+        for(int i=0;i<5;i++) {
             notAWinner &= aGame.wasCorrectlyAnswered();
             aGame.wasCorrectlyAnswered();
         }
