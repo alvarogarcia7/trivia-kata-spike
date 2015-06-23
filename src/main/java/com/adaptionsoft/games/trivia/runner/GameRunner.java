@@ -19,8 +19,7 @@ public class GameRunner {
         aGame.add("Sue5");
         aGame.add("Sue6");
         aGame.add("Sue7");
-        aGame.add("SueAnother");
-		
+
 		Random rand = new Random();
 	
 		do {
