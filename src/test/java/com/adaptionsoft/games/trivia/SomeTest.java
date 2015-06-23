@@ -38,12 +38,8 @@ public class SomeTest {
 
     @Test
     public void a_player_that_always_guesses_correct_should_win() throws Exception {
-
-
-
         boolean notAWinner=true;
         Game aGame = new Game();
-
 
         aGame.add("Chet");
         aGame.add("Pat");
@@ -57,6 +53,5 @@ public class SomeTest {
             aGame.wasCorrectlyAnswered();
         }
         assertFalse(notAWinner);
-
     }
 }
