@@ -6,6 +6,8 @@ import org.junit.Test;
 
 import java.util.Random;
 
+import static org.junit.Assert.assertTrue;
+
 public class End2EndTest {
 
 
@@ -27,7 +29,9 @@ public class End2EndTest {
         aGame.add("Pat");
         aGame.add("Sue");
 
-        Random rand = new Random(seed);
+        assertTrue(aGame.isPlayable());
+
+         Random rand = new Random(seed);
 
         do {
 
