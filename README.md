@@ -4,7 +4,7 @@ This is a brown-bag session we held at a client.
 
 The main point was to communicate the dangers of legacy code and how to refactor it
 
-The exercise is based in the [trivia kata](https://github.com/jbrains/trivia) by [@jbrains](https://github.com/jbrains), java version
+The exercise is based on the [trivia kata](https://github.com/jbrains/trivia) by [@jbrains](https://github.com/jbrains), java version
 
 
 ## How to use this repo
