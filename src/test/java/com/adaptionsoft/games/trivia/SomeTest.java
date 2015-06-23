@@ -51,8 +51,9 @@ public class SomeTest {
 
         assertTrue(aGame.isPlayable());
 
-        for(int i=0;i<6;i++) {
-            notAWinner = aGame.wasCorrectlyAnswered();
+        for(int i=0;i<12;i++) {
+            notAWinner &= aGame.wasCorrectlyAnswered();
+            aGame.wasCorrectlyAnswered();
         }
         assertFalse(notAWinner);
 
