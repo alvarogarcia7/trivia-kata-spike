@@ -17,4 +17,20 @@ public class SomeTest {
         assertThat(agame.howManyPlayers(), is(1));
 
 	}
+
+    @Test
+    public void seven_players_is_playable() throws Exception {
+        Game agame = new Game();
+
+        agame.add("1");
+        agame.add("2");
+        agame.add("3");
+        agame.add("4");
+        agame.add("5");
+        agame.add("6");
+        agame.add("7");
+
+        assertThat(agame.howManyPlayers(), is(7));
+
+    }
 }
