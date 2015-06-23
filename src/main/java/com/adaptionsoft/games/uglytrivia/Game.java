@@ -5,9 +5,9 @@ import java.util.LinkedList;
 
 public class Game {
     ArrayList players = new ArrayList();
-    int[] places = new int[6];
-    int[] purses  = new int[6];
-    boolean[] inPenaltyBox  = new boolean[6];
+    int[] places = new int[7];
+    int[] purses  = new int[7];
+    boolean[] inPenaltyBox  = new boolean[7];
     
     LinkedList popQuestions = new LinkedList();
     LinkedList scienceQuestions = new LinkedList();
@@ -31,7 +31,7 @@ public class Game {
 	}
 	
 	public boolean isPlayable() {
-		return (howManyPlayers() >= 2);
+		return (howManyPlayers() >= 2) && (howManyPlayers() <= 7);
 	}
 
 	public boolean add(String playerName) {
@@ -48,7 +48,7 @@ public class Game {
 	}
 	
 	public int howManyPlayers() {
-		return players.size();
+		return players.size() - 1;
 	}
 
 	public void roll(int roll) {
