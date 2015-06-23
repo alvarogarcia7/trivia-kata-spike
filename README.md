@@ -11,5 +11,5 @@ The exercise is based in the [trivia kata](https://github.com/jbrains/trivia) by
 
 We did two spikes for analysing this kata, they can be found in the spike branches:
 
-  * https://github.com/alvarogarcia7/trivia-kata-spike/tree/spike/1/adding-feature-without-tests
-  * https://github.com/alvarogarcia7/trivia-kata-spike/tree/spike/2/add-tests-plus-golden-master
+  * [Spike 1: add a feature without tests](https://github.com/alvarogarcia7/trivia-kata-spike/tree/spike/1/adding-feature-without-tests)
+  * [Spike 2: adding tests](https://github.com/alvarogarcia7/trivia-kata-spike/tree/spike/2/add-tests-plus-golden-master)
