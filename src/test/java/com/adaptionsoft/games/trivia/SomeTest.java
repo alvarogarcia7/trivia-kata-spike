@@ -50,8 +50,10 @@ public class SomeTest {
 
         assertTrue(aGame.isPlayable());
 
-        for(int i=0;i<5;i++) {
-            notAWinner &= aGame.wasCorrectlyAnswered();
+        for(int i=0;i<Game.NEEDED_COINS_TO_WIN;i++) {
+            assertTrue(notAWinner);
+            notAWinner = aGame.wasCorrectlyAnswered();
+            //Next turn
             aGame.wasCorrectlyAnswered();
         }
         assertFalse(notAWinner);
