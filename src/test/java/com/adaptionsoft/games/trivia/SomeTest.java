@@ -18,5 +18,14 @@ public class SomeTest {
         assertTrue(game.isPlayable());
 	}
 
+    @Test
+    public void play_with_two_players() throws Exception {
+        Game game = new Game();
+        for (int i = 0; i < 1; i++) {
+            game.add("player" + i);
+        }
+        assertTrue(game.isPlayable());
+    }
+
 
 }
