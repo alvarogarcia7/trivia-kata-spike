@@ -48,7 +48,7 @@ public class Game {
 	}
 	
 	public int howManyPlayers() {
-		return players.size() - 1;
+		return players.size();
 	}
 
 	public void roll(int roll) {
