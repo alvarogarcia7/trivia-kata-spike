@@ -1,4 +1,4 @@
-# trivia-kata-spike
+# Trivia Kata, Spikes
 
 This is a brown-bag session we held at a client.
 
