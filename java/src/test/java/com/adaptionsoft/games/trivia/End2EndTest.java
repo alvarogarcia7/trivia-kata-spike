@@ -21,6 +21,38 @@ public class End2EndTest {
         playGameWithSeed(6L);
 	}
 
+    @Test
+    public void playGameWith7Players() {
+        boolean notAWinner;
+        Game aGame = new Game();
+
+        aGame.add("Chet");
+        aGame.add("Pat");
+        aGame.add("Sue1");
+        aGame.add("Sue2");
+        aGame.add("Sue3");
+        aGame.add("Sue4");
+        aGame.add("Sue5");
+
+        assertTrue(aGame.isPlayable());
+
+        Random rand = new Random(1L);
+
+        do {
+
+            aGame.roll(rand.nextInt(5) + 1);
+
+            if (rand.nextInt(9) == 7) {
+                notAWinner = aGame.wrongAnswer();
+            } else {
+                notAWinner = aGame.wasCorrectlyAnswered();
+            }
+
+
+
+        } while (notAWinner);
+    }
+
     private void playGameWithSeed(long seed) {
         boolean notAWinner;
         Game aGame = new Game();
