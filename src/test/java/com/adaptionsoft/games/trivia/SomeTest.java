@@ -9,14 +9,11 @@ import java.util.stream.Stream;
 
 public class SomeTest {
 
-	@Test(expected = IndexOutOfBoundsException.class)
+	@Test(expected = ArrayIndexOutOfBoundsException.class)
 	public void test_max_players_reached() throws Exception {
 		Game game = new Game();
-
-        for (int i )
-
-        Stream<String>.of("1", "2", "3", "4", "5", "6", "7").;
-
-
+        for (int i = 0; i < 200; i++) {
+            game.add("player" + i);
+        }
 	}
 }
